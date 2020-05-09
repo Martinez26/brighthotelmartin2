@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="boka.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <a class="hemknapp" href="index.html">
+      <img id="logo" src="loga.png" alt="Bild på loga">
+    </a>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html" class="navlogo">
+      <p>bright hotel</p>
+    </a>
+
+    <label for="show-menu" class="show-menu">&#9776;</label>
+    <input type="checkbox" id="show-menu" role="button">
+    <ul id="menu" class="dropdown">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="boka.html">Boka</a></li>
+      <li>
+        <a href="#">Bo &#xFFEC;</a>
+        <ul class="hidden">
+          <li><a href="#">Hotell</a></li>
+          <li><a href="hotellrum.html">Hotellrum</a></li>
+          <li><a href="#">Pool</a></li>
+          <li><a href="#">Spa</a></li>
+          <li><a href="#">Gym</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Äta &#xFFEC;</a>
+        <ul class="hidden">
+          <li><a href="restaurang.html">Restaurang</a></li>
+          <li><a href="#">Bar</a></li>
+          <li><a href="#">Café</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Om oss &#xFFEC;</a>
+        <ul class="hidden">
+          <li><a href="#">Om Brighthotel</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="hitta.html">Hitta</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+
+  <section>
+    <h1>Boka ditt hotellrum hos oss</h1>
+    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+
+  <div class="boka-hotellrum">
+    <form name="formular" class="formular" method="post">
+
+      <h2>Boka hotellrum</h2>
+      <h3 class="kontakt">Kontakt</h3>
+
+      <label>Namn:<input type="text" name="namn" id="namn" placeholder="Namn" required></label>
+
+      <label>E-postadress:
+        <input type="email" name="email" id="email" placeholder="E-postadress" required></label>
+
+      <label>Telefon nr:
+        <input type="tel" name="telnr" id="telnr" placeholder="Telefonnummer" required></label>
+
+      <label>Stad:
+        <input type="text" name="stad" id="stad" placeholder="Stad" required></label>
+
+      <label>Address:
+        <input type="text" name="address" id="address" placeholder="Address" required></label>
+
+      <label>Postnummer:
+        <input type="text" name="postnummer" id="postnummer" placeholder="Postnummer" required></label>
+
+      <h3 class="detaljer">Rums detaljer</h3>
+
+      <label>Rumstyp:
+        <select>
+          <option selected hidden>Rumstyp</option>
+          <option value="enkelrum">Enkelrum</option>
+          <option value="standardrum">Standardrum</option>
+          <option value="deluxrum">Deluxrum</option>
+          <option value="superior_svit">Superior svit</option>
+          <option value="premium_svit">Premium svit</option>
+        </select>
+      </label>
+
+      <label>Vuxna(18+):
+        <select>
+          <option selected hidden>Antal vuxna</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="+4">+4</option>
+        </select>
+      </label>
+
+      <label>Barn(0-17):
+        <select>
+          <option selected hidden>Antal Barn</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="+4">+4</option>
+        </select>
+      </label>
+
+      <label>Incheckning:</label><br>
+      <input type="date" name="incheckning" id="incheck" required>
+
+      <label>Utcheckning</label><br>
+      <input type="date" name="utcheckning" id="utcheck" required>
+
+      <label>Något annat som vi behöver veta:</label>
+      <textarea style="min-height: 100px; resize: none;" placeholder="skriv ditt meddelande här..."></textarea>
+
+      <input type="submit" name="skicka" id="skicka" value="Skicka" />
+
+    </form>
+  </div>
+
+  <div class="boka-mote">
+    <form class="formular" method="post">
+
+      <h2>Boka möte</h2>
+      <h3 class="kontakt">Kontakt</h3>
+
+      <label>Förnamn:</label><br />
+      <input type="text" name="fnamn" placeholder="Förnamn:" required><br>
+
+      <label>Efternamn:</label><br>
+      <input type="text" name="enamn" placeholder="Efternamn:" required><br>
+
+      <label>E-postadress:</label><br>
+      <input type="email" name="email" placeholder="E-postadress:" required><br>
+
+      <label for="telnr">Telefonnummer:</label><br>
+      <input type="tel" name="telnr" placeholder="Telefonnummer:" autocomplete="tel"><br>
+
+      <label>Företagsnamn:</label><br>
+      <input type="text" placeholder="Företagsnamn:">
+
+      <h3 class="detaljer">Mötes detaljer</h3>
+
+      <label>Personer:</label>
+      <input type="text" name="personer" placeholder="Personer" required>
+
+      <label>Möteslokal:</label><br>
+      <select>
+        <option selected hidden>Välj vilken möteslokal</option>
+        <option value="liten">liten möteslokal, ca. 10 personer</option>
+        <option value="mellan">mellan möteslokal, ca. 50 presoner</option>
+        <option value="sviter">stor möteslokal, min 100 personer</option>
+      </select>
+
+
+      <label>Datum och tid för mötet</label><br>
+      <input type="datetime-local" name="incheckning">
+
+      <textarea style="min-height: 100px; resize: none;" placeholder="skriv ditt meddelande här..."></textarea>
+
+
+      <input type="submit" name="skicka">
+
+    </form>
+  </div>
+
+  <div class="vidarbefodring">
+    <a href="hotellrum.html">
+      <p>Läs om våra hotellrum här!</p>
+    </a>
+  </div>
+
+
+  <div class="sociala_medier">
+    <p>
+      <a class="fa fa-instagram iconer" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"></a>
+      <a id="facebook" class="fa fa-facebook-square iconer" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"></a>
+      <a id="youtube" class="fa fa-youtube-play iconer" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"></a>
+      <a id="twitter" class="fa fa-twitter iconer" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"></a>
+    </p>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <img id="footer-logo" src="loga.png" alt="Bild på loga">
+      <p style="font-size: 12px; color: gray;">Bright Hotel © 2020</p>
+    </div>
+    <div class="footer-center">
+      <h3>Kontakt</h3>
+      <div>
+        <p><i class="fa fa-map-marker iconer"></i>Brightstreet 1 Bright City</p>
+      </div>
+      <div>
+        <a href="tel:1234567800"><i class="fa fa-phone iconer"></i>123-456-78-00</a>
+      </div>
+      <div>
+        <a href="mailto:info@brighthotel.com"><i class="fa fa-envelope iconer"></i>info@brighthotel.com</a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <h3>Om Hotellet</h3>
+      <p>Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

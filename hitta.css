@@ -1,0 +1,152 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "section5 section5 section5 section5"
+    "social social social social"
+    "footer footer footer footer";
+  margin: 0;
+}
+
+header {
+  background-image: url(hitta.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+section {
+  grid-area: section5;
+}
+
+
+.split {
+  margin-top: 20px;
+  height: 75px;
+  background-color: #414141;
+}
+
+.hitta {
+  display: grid;
+  margin: 20px;
+  justify-items: center;
+}
+
+.hitta h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  width: 100%;
+  max-width: 500px;
+  font-weight: 500;
+}
+
+.hitta p {
+  width: 100%;
+  max-width: 480px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+
+.google-maps{
+    overflow: hidden;
+    padding-bottom: 30%;
+    position: relative;
+    min-height: 500px;
+}
+.google-maps iframe{
+    border: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute
+}
+
+ .knapp {
+  display: grid;
+  justify-self: center;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  background-color: #ab996f;
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px 0;
+  width: 80%;
+  max-width: 400px;
+  transition: box-shadow .4s;
+  border: 0px;
+  border-radius: 7px;
+}
+.knapp:hover {
+  box-shadow: 0 0 15px black;
+}
+
+.hittaratt {
+  margin: 20px;
+  display: grid;
+  justify-items: center;
+}
+
+.hittaratt h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.hittaratt h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.hittaratt p {
+  max-width: 480px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1200px) {
+
+  body {
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "section5 section5 section5 section5"
+    "social social social social"
+    "footer footer footer footer";
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+    .hittaratt h1 {
+      font-size: 2.5rem;
+    }
+
+    .hittaratt h3 {
+      font-size: 2rem;
+    }
+
+    .hittaratt p {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+
+    .hitta h2 {
+      font-size: 2rem;
+    }
+
+    .hitta p {
+      font-size: 1.6rem;
+    }
+
+    .knapp {
+      font-size: 2rem;
+    }
+}
